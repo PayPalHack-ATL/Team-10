@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.List;
 
 public class GiveMoney extends AppCompatActivity {
 
@@ -17,8 +20,16 @@ public class GiveMoney extends AppCompatActivity {
         final Button RequestServiceGood;
         final Button BackButton ;
 
+        ListView OngoingServices;
+        ListView CurrentlyPosted;
+        ListView CompletedServices;
+
         RandomLottery = findViewById(R.id.randomLotteryButton);
         RequestServiceGood = findViewById(R.id.requestServiceGoodButton);
+
+        OngoingServices = findViewById(R.id.ongoingServices);
+        CurrentlyPosted = findViewById(R.id.currentlyPosted);
+        CompletedServices = findViewById(R.id.completedServices);
 
 
 
@@ -34,7 +45,7 @@ public class GiveMoney extends AppCompatActivity {
         RequestServiceGood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(MainActivity.this, com.example.beza.fundmycollege.RequestServiceGood.class));
+                startActivity(new Intent(GiveMoney.this, com.example.beza.fundmycollege.RequestServiceGood.class));
             }
         });
 
