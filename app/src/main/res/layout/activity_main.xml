@@ -11,15 +11,18 @@
         android:id="@+id/giveMoneyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="143dp"
         android:text="Give Money"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="143dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/recieveMoneyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:text="Get Money"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="259dp" />
+        app:layout_constraintStart_toStartOf="@+id/giveMoneyButton"
+        app:layout_constraintTop_toBottomOf="@+id/giveMoneyButton" />
 </android.support.constraint.ConstraintLayout>

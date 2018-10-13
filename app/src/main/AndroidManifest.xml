@@ -19,7 +19,10 @@
         <activity android:name=".GiveMoney" />
         <activity android:name=".RecieveMoney" />
         <activity android:name=".RandomLottery" />
-        <activity android:name=".RequestServiceGood"></activity>
+        <activity android:name=".RequestServiceGood" />
+        <activity android:name=".RDashboard" />
+        <activity android:name=".JobsSelected" />
+        <activity android:name=".Services"></activity>
     </application>
 
 </manifest>

@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         RecieveMoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, com.example.beza.fundmycollege.RecieveMoney.class));
+                startActivity(new Intent(MainActivity.this, com.example.beza.fundmycollege.RDashboard.class));
             }
         });
 
