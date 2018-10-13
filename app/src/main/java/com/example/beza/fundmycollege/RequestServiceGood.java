@@ -1,9 +1,6 @@
 package com.example.beza.fundmycollege;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4829c2cae0da5727c19c660a238d566618a80086
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,13 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-<<<<<<< HEAD
-=======
-=======
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
->>>>>>> 4f076b2836c91796ff0c2b6889a5bd558223079a
->>>>>>> 4829c2cae0da5727c19c660a238d566618a80086
 
 public class RequestServiceGood extends AppCompatActivity {
 
@@ -26,10 +16,6 @@ public class RequestServiceGood extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_service_good);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4829c2cae0da5727c19c660a238d566618a80086
 
         final EditText ServiceType;
         final TextView ServiceDescription;
@@ -66,10 +52,5 @@ public class RequestServiceGood extends AppCompatActivity {
             }
         });
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 4f076b2836c91796ff0c2b6889a5bd558223079a
->>>>>>> 4829c2cae0da5727c19c660a238d566618a80086
     }
 }
