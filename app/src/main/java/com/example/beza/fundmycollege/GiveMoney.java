@@ -34,7 +34,7 @@ public class GiveMoney extends AppCompatActivity {
         RequestServiceGood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(MainActivity.this, com.example.beza.fundmycollege.RequestServiceGood.class));
+                startActivity(new Intent(GiveMoney.this, com.example.beza.fundmycollege.RequestServiceGood.class));
             }
         });
 
