@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".GiveMoney" />
         <activity android:name=".RecieveMoney" />
-        <activity android:name=".RandomLottery"></activity>
+        <activity android:name=".RandomLottery" />
+        <activity android:name=".RequestServiceGood"></activity>
     </application>
 
 </manifest>
