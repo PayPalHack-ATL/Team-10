@@ -12,13 +12,21 @@ public class RDashboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rdashboard);
-        Button jSelect = (Button)findViewById(R.id.JSelectBtn);;
-        jSelect.setOnClickListener(new View.OnClickListener() {
+        Button jCompleted = (Button)findViewById(R.id.JSelectBtn);;
+        jCompleted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(RDashboard.this,JobsSelected.class));
             }
         });
+        Button JAvailable = (Button) findViewById(R.id.MoneyBtn);
+        JAvailable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RDashboard.this, Services.class));
+            }
+        });
+
 
     }
 }
