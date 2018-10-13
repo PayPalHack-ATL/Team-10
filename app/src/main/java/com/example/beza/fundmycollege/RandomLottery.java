@@ -49,7 +49,61 @@ public class RandomLottery extends AppCompatActivity implements AdapterView.OnIt
             }
         });
 
+        StudentSchool.setOnItemSelectedListener(this);
+        List<String> Schools = new ArrayList<String>();
+        Schools.add("Georgia State University");
+        Schools.add("University Of West Georgia");
+        Schools.add("Morehouse");
+        Schools.add("Spelman");
+        Schools.add("Clark Atlanta University");
+        Schools.add("Don't Care");
 
+
+        ArrayAdapter<String> schoolAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, Schools);
+        schoolAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        StudentSchool.setAdapter(schoolAdapter);
+
+        StudentMajor.setOnItemSelectedListener(this);
+        List<String> Majors = new ArrayList<String>();
+        Majors.add("Computer Science");
+        Majors.add("Business");
+        Majors.add("Mathematics");
+        Majors.add("Art");
+        Majors.add("Don't Care");
+
+        ArrayAdapter<String> majorsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, Majors);
+        majorsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        StudentMajor.setAdapter(majorsAdapter);
+
+
+        StudentYear.setOnItemSelectedListener(this);
+        List<String> Year = new ArrayList<String>();
+        Year.add("Freshman");
+        Year.add("Sophomore");
+        Year.add("Junior");
+        Year.add("1st Year Grad");
+        Year.add("2nd Year Grad");
+        Year.add("PHD");
+        Year.add("Don't Care");
+
+        ArrayAdapter<String> YearAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, Year);
+        YearAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        StudentYear.setAdapter(YearAdapter);
+
+        StudentYear.setOnItemSelectedListener(this);
+        List<String> GPA = new ArrayList<String>();
+        GPA.add("1.0 - 2.0");
+        GPA.add("2.0 - 2.5");
+        GPA.add("2.5 - 3.0");
+        GPA.add("3.0 - 3.5");
+        GPA.add("3.5 - 4.0");
+        GPA.add("Don't Care");
+
+        ArrayAdapter<String> GPAAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, GPA);
+        GPAAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        StudentGPA.setAdapter(GPAAdapter);
+
+<<<<<<< HEAD
         DonateToStudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,17 +165,26 @@ public class RandomLottery extends AppCompatActivity implements AdapterView.OnIt
         ArrayAdapter<String> GPAAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, GPA);
         GPAAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         StudentGPA.setAdapter(GPAAdapter);
+=======
+    }
+>>>>>>> 4f076b2836c91796ff0c2b6889a5bd558223079a
 
     }
-
-
-
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
     }
 
+<<<<<<< HEAD
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+    }
+
+=======
+>>>>>>> 4f076b2836c91796ff0c2b6889a5bd558223079a
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
